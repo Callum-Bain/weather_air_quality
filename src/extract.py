@@ -2,8 +2,8 @@ import requests
 import json
 from pprint import pprint
 
-response = requests.get('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json')
+weather_response = requests.get('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json')
 
-data = response.json()
+weather_data = weather_response.json()
 
-pprint(data)
+pprint(weather_data)

@@ -6,4 +6,8 @@ weather_response = requests.get('https://weather.visualcrossing.com/VisualCrossi
 
 weather_data = weather_response.json()
 
-pprint(weather_data)
+aq_response = requests.get('https://api.waqi.info/feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2')
+
+aq_data = aq_response.json()
+
+pprint(aq_data)

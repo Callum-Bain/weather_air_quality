@@ -1,0 +1,221 @@
+{
+    "status": "ok",
+    "data": {
+      "aqi": 56,
+      "idx": 5724,
+      "attributions": [
+        {
+          "url": "http://uk-air.defra.gov.uk/",
+          "name": "UK-AIR, air quality information resource - Defra, UK",
+          "logo": "UK-Department-for-environment-food-and-rural-affairs.png"
+        },
+        {
+          "url": "https://londonair.org.uk/",
+          "name": "London Air Quality Network - Environmental Research Group, King's College London",
+          "logo": "UK-London-Kings-College.png"
+        },
+        {
+          "url": "https://waqi.info/",
+          "name": "World Air Quality Index Project"
+        }
+      ],
+      "city": {
+        "geo": [51.5073509, -0.1277583],
+        "name": "London",
+        "url": "https://aqicn.org/city/london",
+        "location": ""
+      },
+      "dominentpol": "pm25",
+      "iaqi": {
+        "co": {
+          "v": 2.4
+        },
+        "h": {
+          "v": 47.4
+        },
+        "no2": {
+          "v": 7
+        },
+        "o3": {
+          "v": 0.3
+        },
+        "p": {
+          "v": 1020.1
+        },
+        "pm10": {
+          "v": 23
+        },
+        "pm25": {
+          "v": 56
+        },
+        "so2": {
+          "v": 1
+        },
+        "t": {
+          "v": 17.4
+        },
+        "w": {
+          "v": 10.7
+        }
+      },
+      "time": {
+        "s": "2025-04-03 12:00:00",
+        "tz": "+01:00",
+        "v": 1743681600,
+        "iso": "2025-04-03T12:00:00+01:00"
+      },
+      "forecast": {
+        "daily": {
+          "o3": [
+            {
+              "avg": 13,
+              "day": "2025-04-01",
+              "max": 18,
+              "min": 9
+            },
+            {
+              "avg": 13,
+              "day": "2025-04-02",
+              "max": 17,
+              "min": 8
+            },
+            {
+              "avg": 9,
+              "day": "2025-04-03",
+              "max": 17,
+              "min": 6
+            },
+            {
+              "avg": 11,
+              "day": "2025-04-04",
+              "max": 20,
+              "min": 5
+            },
+            {
+              "avg": 15,
+              "day": "2025-04-05",
+              "max": 15,
+              "min": 15
+            }
+          ],
+          "pm10": [
+            {
+              "avg": 11,
+              "day": "2025-04-01",
+              "max": 15,
+              "min": 7
+            },
+            {
+              "avg": 12,
+              "day": "2025-04-02",
+              "max": 19,
+              "min": 7
+            },
+            {
+              "avg": 25,
+              "day": "2025-04-03",
+              "max": 27,
+              "min": 15
+            },
+            {
+              "avg": 16,
+              "day": "2025-04-04",
+              "max": 25,
+              "min": 6
+            },
+            {
+              "avg": 10,
+              "day": "2025-04-05",
+              "max": 10,
+              "min": 9
+            }
+          ],
+          "pm25": [
+            {
+              "avg": 25,
+              "day": "2025-04-01",
+              "max": 34,
+              "min": 12
+            },
+            {
+              "avg": 41,
+              "day": "2025-04-02",
+              "max": 62,
+              "min": 22
+            },
+            {
+              "avg": 73,
+              "day": "2025-04-03",
+              "max": 78,
+              "min": 54
+            },
+            {
+              "avg": 47,
+              "day": "2025-04-04",
+              "max": 73,
+              "min": 13
+            },
+            {
+              "avg": 22,
+              "day": "2025-04-05",
+              "max": 22,
+              "min": 18
+            }
+          ],
+          "uvi": [
+            {
+              "avg": 0,
+              "day": "2025-03-29",
+              "max": 0,
+              "min": 0
+            },
+            {
+              "avg": 0,
+              "day": "2025-03-30",
+              "max": 4,
+              "min": 0
+            },
+            {
+              "avg": 1,
+              "day": "2025-03-31",
+              "max": 5,
+              "min": 0
+            },
+            {
+              "avg": 1,
+              "day": "2025-04-01",
+              "max": 5,
+              "min": 0
+            },
+            {
+              "avg": 1,
+              "day": "2025-04-02",
+              "max": 4,
+              "min": 0
+            },
+            {
+              "avg": 0,
+              "day": "2025-04-03",
+              "max": 3,
+              "min": 0
+            },
+            {
+              "avg": 0,
+              "day": "2025-04-04",
+              "max": 3,
+              "min": 0
+            },
+            {
+              "avg": 1,
+              "day": "2025-04-05",
+              "max": 4,
+              "min": 0
+            }
+          ]
+        }
+      },
+      "debug": {
+        "sync": "2025-04-03T21:40:10+09:00"
+      }
+    }
+  }

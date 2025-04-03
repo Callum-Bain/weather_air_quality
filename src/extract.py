@@ -16,9 +16,9 @@ aq_response = requests.get(f'https://api.waqi.info/feed/London/?token={aq_key}')
 raw_aq_data = get_aq_data(aq_response)
 timestamp = list(raw_aq_data.keys())[0]
 
-with open(f'data/weather_output_{timestamp}.txt', 'w') as file:
-    file.write(str(raw_weather_data))
+with open(f'data/weather_output_{timestamp}.json', 'w') as file:
+    json.dump(raw_weather_data, file)
 
-with open(f'data/aq_output_{timestamp}.txt', 'w') as file:
-    file.write(str(raw_aq_data))
+with open(f'data/aq_output_{timestamp}.json', 'w') as file:
+    json.dump(raw_aq_data, file)
 

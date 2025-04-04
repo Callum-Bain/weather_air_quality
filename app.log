@@ -1,0 +1,9 @@
+2025-04-04 16:17:07,686 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-04-04 16:17:08,087 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrosingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 404 431
+2025-04-04 16:17:08,087 - ERROR - Something Else: Expecting value: line 1 column 1 (char 0)
+2025-04-04 16:17:08,089 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
+2025-04-04 16:17:09,400 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None
+2025-04-04 16:17:54,742 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-04-04 16:17:55,174 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 200 None
+2025-04-04 16:17:55,270 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
+2025-04-04 16:17:56,314 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None

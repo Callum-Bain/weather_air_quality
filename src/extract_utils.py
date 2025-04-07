@@ -13,4 +13,5 @@ def get_aq_data(aq_response):
     formatted_timestamp = datetime.strptime(flat_aq_date, "%Y-%m-%d %H:%M:%S") + timedelta(hours=2)
     formatted_timestamp = str(formatted_timestamp)
     flat_aq_data = aq_data['data']['iaqi']
-    return {formatted_timestamp: flat_aq_data}
+    flat_aqi = aq_data['data']['aqi']
+    return {formatted_timestamp: flat_aq_data, 'aqi': flat_aqi}

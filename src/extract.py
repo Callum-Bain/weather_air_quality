@@ -28,11 +28,10 @@ def extract():
     except requests.exceptions.RequestException as err:
         logging.error("Something Else: %s", err)
 
-    try:
+    try:  
         aq_key = os.getenv("AQ_KEY")
         aq_response = requests.get(f'https://api.waqi.info/feed/London/?token={aq_key}')
         raw_aq_data = get_aq_data(aq_response)
-        global timestamp 
         timestamp = list(raw_aq_data.keys())[0]
     except requests.exceptions.HTTPError as errh:
         logging.error("HTTP Error: %s", errh)
@@ -53,10 +52,10 @@ def extract():
         lines = timestamp_file.readlines()
         last_line = lines[-1].strip() if lines else ""
         if timestamp != last_line:       
-            with open(f'data/weather_output_{timestamp}.json', 'w') as file:
+            with open(f'data/Extract/weather_output_{timestamp}.json', 'w') as file:
                 json.dump(raw_weather_data, file)
 
-            with open(f'data/aq_output_{timestamp}.json', 'w') as file:
+            with open(f'data/Extract/aq_output_{timestamp}.json', 'w') as file:
                 json.dump(raw_aq_data, file)
 
             # append latest timestamps to csv file

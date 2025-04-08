@@ -1,0 +1,2 @@
+datetime,temp,feelslike,humidity,dew,precip,precipprob,snow,snowdepth,preciptype,windgust,windspeed,winddir,pressure,visibility,cloudcover,solarradiation,solarenergy,uvindex,severerisk,conditions,icon,source,date,datetime_stamp
+13:00:00,14.44,14.44,40.99,34.4,0.0,0.0,0.0,0.0,,15.7,6.3,67.5,1027.0,15.0,19.5,674.0,2.4,7.0,10.0,Clear,clear-day,fcst,2025-04-08,2025-04-08 13:00:00

@@ -1,0 +1,2 @@
+datetime,temp,feelslike,humidity,dew,precip,precipprob,snow,snowdepth,preciptype,windgust,windspeed,winddir,pressure,visibility,cloudcover,solarradiation,solarenergy,uvindex,severerisk,conditions,icon,source,date,datetime_stamp,co,h,no2,o3,p,pm10,pm25,so2,t,w,AQI,AQI Category
+15:00:00,15.17,15.17,38.91,34.2,0.0,0.0,0.0,0.0,,15.2,6.0,69.6,1026.0,15.0,100.0,484.0,1.7,5.0,10.0,Overcast,cloudy,fcst,2025-04-08,2025-04-08 15:00:00,2.5,42.1,13.8,32.1,1027.7,36,57,1.5,15.6,3.8,57,Moderate

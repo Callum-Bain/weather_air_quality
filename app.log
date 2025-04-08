@@ -59,3 +59,15 @@
 2025-04-08 13:06:31,039 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 200 None
 2025-04-08 13:06:31,046 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
 2025-04-08 13:06:32,096 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None
+2025-04-08 14:53:28,323 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-04-08 14:53:28,764 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 200 None
+2025-04-08 14:53:28,861 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
+2025-04-08 14:53:30,108 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None
+2025-04-08 14:55:27,805 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-04-08 14:55:28,646 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 200 None
+2025-04-08 14:55:28,742 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
+2025-04-08 14:55:29,982 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None
+2025-04-08 15:26:59,362 - ERROR - Unable to append weather data
+2025-04-08 15:30:41,509 - WARNING - Unable to append weather data
+2025-04-08 15:30:41,509 - WARNING - Unable to append air quality data
+2025-04-08 15:30:41,510 - WARNING - Unable to append merged data

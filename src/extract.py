@@ -7,7 +7,7 @@ from pprint import pprint
 from dotenv import load_dotenv
 import logging
 
-load_dotenv() 
+load_dotenv()
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -28,7 +28,7 @@ def extract():
     except requests.exceptions.RequestException as err:
         logging.error("Something Else: %s", err)
 
-    try:  
+    try:
         aq_key = os.getenv("AQ_KEY")
         aq_response = requests.get(f'https://api.waqi.info/feed/London/?token={aq_key}')
         raw_aq_data = get_aq_data(aq_response)
@@ -51,7 +51,7 @@ def extract():
         timestamp_file.seek(0)
         lines = timestamp_file.readlines()
         last_line = lines[-1].strip() if lines else ""
-        if timestamp != last_line:       
+        if timestamp != last_line:
             with open(f'data/Extract/weather_output_{timestamp}.json', 'w') as file:
                 json.dump(raw_weather_data, file)
 

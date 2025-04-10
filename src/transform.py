@@ -93,18 +93,6 @@ def transform():
             weather_hour_df = new_weather_df[new_weather_df['datetime'].isin(aq_df['datetime'])]
             # print(weather_hour_df)
 
-            # Final AQ Dataframe
-            new_aq_df
-
-            # final Merged Dataframe
-            merged_df = pd.merge(weather_hour_df, new_aq_df, on='datetime')
-            new_merged_df = merged_df.rename(columns={'date_x': 'date'})
-            final_merged_df = new_merged_df.drop(columns=['date_y'], inplace=False)
-            final_merged_df = final_merged_df.rename(columns={'datetime_stamp_x': 'datetime_stamp'})
-            final_merged_df = final_merged_df.drop(columns=['datetime_stamp_y'], inplace=False)
-            # print(final_merged_df.columns)
-
-
             # Create CSV weather output file
             if not os.path.exists('data/Transform/weather_transformed_data.csv'):
                 weather_hour_df.to_csv('data/Transform/weather_transformed_data.csv', index=False)
@@ -120,14 +108,6 @@ def transform():
                 new_aq_df.to_csv('data/Transform/air_quality_transformed_data.csv', index=False, mode='a', header=False)
             else:
                 logging.warning("Unable to append air quality data")
-
-            # Create CSV Merged output file
-            if not os.path.exists('data/Transform/merged_transformed_data.csv'):
-                final_merged_df.to_csv('data/Transform/merged_transformed_data.csv', index=False)
-            elif (final_merged_df['datetime_stamp'] != last_line).any():
-                final_merged_df.to_csv('data/Transform/merged_transformed_data.csv', index=False, mode='a', header=False)
-            else:
-                logging.warning("Unable to append merged data")
 
 
 transform()

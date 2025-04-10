@@ -1,17 +1,24 @@
 import pg8000.native
 from src.load_utils import connect_to_db
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def load():
-    con = connect_to_db()
-    query = con.run('''SELECT EXISTS(SELECT 1 FROM information_schema.tables
-                       WHERE table_catalog='DB_NAME' AND
-                       table_schema='public' AND
-                       table_name='TABLE_NAME');''')
-    if query == True:
-        continue
-    else:
-        # run sql file
+    conn = connect_to_db()
+    query = conn.run('''SELECT EXISTS(SELECT 1 FROM information_schema.tables
+                       WHERE table_catalog='weather_api' AND
+                       table_schema='public');''')
+    if query == False:
+        with open("sql/schema.sql", "r") as file:
+            sql_commands = file.read()
+
+        for command in sql_commands.strip().split(';'):
+            if command.strip():
+                conn.run(command)
+        conn.close()
+
+load()
 
 
 

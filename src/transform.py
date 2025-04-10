@@ -33,7 +33,32 @@ def transform():
             weather_df['temp'] = round((weather_df['temp'] - 32) / 1.8, 2)
             weather_df['feelslike'] = round((weather_df['feelslike'] - 32) / 1.8, 2)
             new_weather_df = weather_df.drop(columns=['stations', 'datetimeEpoch'], inplace=False)
-            # print(new_weather_df)
+            new_weather_df = new_weather_df[
+                        ['datetime_stamp',
+                         'date',
+                         'datetime',
+                         'temp',
+                         'feelslike',
+                         'humidity',
+                         'dew',
+                         'precip',
+                         'precipprob',
+                         'snow',
+                         'snowdepth',
+                         'preciptype',
+                         'windgust',
+                         'windspeed',
+                         'winddir',
+                         'pressure',
+                         'visibility',
+                         'cloudcover',
+                         'solarradiation',
+                         'solarenergy',
+                         'uvindex',
+                         'severerisk',
+                         'conditions',
+                         'icon',
+                         'source']]
 
         with open(f'data/Extract/aq_output_{last_line}.json', 'r') as aq_file:
             aq_load = json.load(aq_file)
@@ -46,6 +71,22 @@ def transform():
             aq_df['AQI'] = aqi_data
             aq_df['AQI Category'] = aq_df['AQI'].apply(aqi_categories)
             new_aq_df = aq_df.reset_index(drop=True)
+            new_aq_df = new_aq_df[
+                    ['datetime_stamp',
+                     'co',
+                     'h',
+                     'no2',
+                     'o3',
+                     'p',
+                     'pm10',
+                     'pm25',
+                     'so2',
+                     't',
+                     'w',
+                     'date',
+                     'datetime',
+                     'AQI',
+                     'AQI Category']]
             # print(new_aq_df)
 
             # Final Weather Dataframe

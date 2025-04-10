@@ -71,3 +71,28 @@
 2025-04-08 15:30:41,509 - WARNING - Unable to append weather data
 2025-04-08 15:30:41,509 - WARNING - Unable to append air quality data
 2025-04-08 15:30:41,510 - WARNING - Unable to append merged data
+2025-04-10 14:30:59,175 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-04-10 14:30:59,615 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 200 None
+2025-04-10 14:30:59,706 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
+2025-04-10 14:31:00,944 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None
+2025-04-10 14:31:33,859 - WARNING - Unable to append weather data
+2025-04-10 14:31:33,859 - WARNING - Unable to append air quality data
+2025-04-10 14:31:33,859 - WARNING - Unable to append merged data
+2025-04-10 14:32:34,945 - WARNING - Unable to append weather data
+2025-04-10 14:32:34,945 - WARNING - Unable to append air quality data
+2025-04-10 14:32:34,945 - WARNING - Unable to append merged data
+2025-04-10 14:33:15,402 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-04-10 14:33:15,813 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 200 None
+2025-04-10 14:33:15,905 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
+2025-04-10 14:33:17,161 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None
+2025-04-10 14:33:24,942 - WARNING - Unable to append weather data
+2025-04-10 14:33:24,942 - WARNING - Unable to append air quality data
+2025-04-10 14:33:24,943 - WARNING - Unable to append merged data
+2025-04-10 14:36:00,232 - WARNING - Unable to append weather data
+2025-04-10 14:36:00,232 - WARNING - Unable to append air quality data
+2025-04-10 14:36:00,232 - WARNING - Unable to append merged data
+2025-04-10 14:39:53,283 - WARNING - Unable to append air quality data
+2025-04-10 14:39:53,283 - WARNING - Unable to append merged data
+2025-04-10 14:55:52,774 - WARNING - Unable to append weather data
+2025-04-10 14:55:52,775 - WARNING - Unable to append air quality data
+2025-04-10 14:55:52,776 - WARNING - Unable to append merged data

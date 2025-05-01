@@ -1,13 +1,21 @@
-import pg8000.native
-from dotenv import load_dotenv
+from pg8000.native import Connection
+import dotenv
 import os
 
+dotenv.load_dotenv(override=True)
+
 def connect_to_db():
-    load_dotenv()
-    conn = pg8000.native.Connection(
-        user=os.getenv("RDS_USER"),
-        password=os.getenv("RDS_PASSWORD"),
-        # host=os.getenv("RDS_HOST"),
-        database=os.getenv("RDS_NAME")
+
+    user = os.environ["RDS_USER"]
+    password = os.environ["RDS_PASSWORD"]
+    host = os.environ["RDS_HOST"]
+    port = os.environ["RDS_PORT"]
+    database = os.environ["RDS_NAME"]
+
+    return Connection(
+        user=user,
+        password=password,
+        host=host,
+        port=port,
+        database=database
         )
-    return conn

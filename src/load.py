@@ -1,10 +1,7 @@
-import pg8000.native
 from src.load_utils import connect_to_db
-from dotenv import load_dotenv
-
-load_dotenv()
 
 def load():
+    
     conn = connect_to_db()
     query = conn.run('''SELECT EXISTS(SELECT 1 FROM information_schema.tables
                        WHERE table_catalog='weather_api' AND
@@ -19,9 +16,6 @@ def load():
         conn.close()
 
 load()
-
-
-
 
 # Load in transformed data
 # SQL schema

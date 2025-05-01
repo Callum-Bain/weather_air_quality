@@ -1,6 +1,7 @@
-CREATE DATABASE weather_aqi;
+CREATE DATABASE  weather_aqi;
 
-CREATE TABLE weather_data (
+ 
+CREATE TABLE IF NOT EXISTS weather_data (
     datetime_stamp TEXT PRIMARY KEY,
     datetime TIME,
     temp DECIMAL,
@@ -28,7 +29,7 @@ CREATE TABLE weather_data (
     date DATE
 );
 
-CREATE TABLE air_quality (
+CREATE TABLE IF NOT EXISTS air_quality (
     datetime_stamp TEXT PRIMARY KEY,
     co DECIMAL,
     h DECIMAL,

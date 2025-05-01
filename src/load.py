@@ -1,22 +1,33 @@
 from src.load_utils import connect_to_db
+import pg8000
 
 def load():
-    
-    conn = connect_to_db()
-    query = conn.run('''SELECT EXISTS(SELECT 1 FROM information_schema.tables
-                       WHERE table_catalog='weather_api' AND
-                       table_schema='public');''')
-    if query == False:
-        with open("sql/schema.sql", "r") as file:
-            sql_commands = file.read()
+    try:
+        conn = connect_to_db()
+    except pg8000.exceptions.DatabaseError as e:
+        print(e.args[0]['C'])
 
-        for command in sql_commands.strip().split(';'):
-            if command.strip():
-                conn.run(command)
-        conn.close()
+    # query = conn.run('''
+    #                 SELECT EXISTS (
+    #                 SELECT 1 FROM pg_catalog.pg_database
+    #                 WHERE datname = 'weather_aqi') as database_exists;
+    #                  ''')
+    # print(query)
+    # # if query == False:
+    # #     print(query) 
+    # #     # with open("sql/schema.sql", "r") as file:
+    # #     #     sql_commands = file.read()
+
+    # #     # for command in sql_commands.strip().split(';'):
+    # #     #     if command.strip():
+    #     #         conn.run(command)
+    #     # print(query)        
+    #     # conn.close()
+    # else:
+    #     print('Nothing')
+    
 
 load()
-
 # Load in transformed data
 # SQL schema
 # conditional logic to see if database already exists

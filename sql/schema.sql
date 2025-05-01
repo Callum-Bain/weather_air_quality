@@ -1,6 +1,3 @@
-CREATE DATABASE  weather_aqi;
-
- 
 CREATE TABLE IF NOT EXISTS weather_data (
     datetime_stamp TEXT PRIMARY KEY,
     datetime TIME,

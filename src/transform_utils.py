@@ -9,10 +9,10 @@ def aqi_categories(aqi):
     elif aqi >= 151 and aqi < 201:
         return "Unhealthy"
     elif aqi >= 201 and aqi < 300:
-        return "Very Unhealthy"  
+        return "Very Unhealthy"
     else:
-        return "Hazardous" 
-    
+        return "Hazardous"
+
 
     # 0 - 50 	    Good
     # 51 -100 	Moderate

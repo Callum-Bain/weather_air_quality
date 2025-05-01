@@ -1,31 +1,25 @@
-from src.load_utils import connect_to_db
+from src.load_utils import connect_to_weather_db, connect_to_postgres_db
 import pg8000
 
 def load():
     try:
-        conn = connect_to_db()
+        conn = connect_to_weather_db()
     except pg8000.exceptions.DatabaseError as e:
-        print(e.args[0]['C'])
+        if e.args[0]['C'] == '3D000':
+            conn = connect_to_postgres_db()
+            query = 'CREATE DATABASE weather_aqi;'
+            conn.run(query)
+            conn.close()
+            conn = connect_to_weather_db()
 
-    # query = conn.run('''
-    #                 SELECT EXISTS (
-    #                 SELECT 1 FROM pg_catalog.pg_database
-    #                 WHERE datname = 'weather_aqi') as database_exists;
-    #                  ''')
-    # print(query)
-    # # if query == False:
-    # #     print(query) 
-    # #     # with open("sql/schema.sql", "r") as file:
-    # #     #     sql_commands = file.read()
+            with open("sql/schema.sql", "r") as file:
+                sql_commands = file.read()
 
-    # #     # for command in sql_commands.strip().split(';'):
-    # #     #     if command.strip():
-    #     #         conn.run(command)
-    #     # print(query)        
-    #     # conn.close()
-    # else:
-    #     print('Nothing')
-    
+            for command in sql_commands.strip().split(';'):
+                if command.strip():
+                    conn.run(command)
+            conn.close()
+
 
 load()
 # Load in transformed data

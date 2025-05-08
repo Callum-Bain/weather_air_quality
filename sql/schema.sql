@@ -1,5 +1,6 @@
 CREATE TABLE IF NOT EXISTS weather_data (
     datetime_stamp TEXT PRIMARY KEY,
+    date DATE,
     datetime TIME,
     temp DECIMAL,
     feelslike DECIMAL,
@@ -22,8 +23,7 @@ CREATE TABLE IF NOT EXISTS weather_data (
     severerisk DECIMAL,
     conditions TEXT,
     icon TEXT,
-    source TEXT,
-    date DATE
+    source TEXT
 );
 
 CREATE TABLE IF NOT EXISTS air_quality (

@@ -96,3 +96,35 @@
 2025-04-10 14:55:52,774 - WARNING - Unable to append weather data
 2025-04-10 14:55:52,775 - WARNING - Unable to append air quality data
 2025-04-10 14:55:52,776 - WARNING - Unable to append merged data
+2025-05-08 12:28:47,284 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-05-08 12:28:47,715 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 200 None
+2025-05-08 12:28:47,806 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
+2025-05-08 12:28:49,041 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None
+2025-05-08 12:29:06,308 - WARNING - Unable to append weather data
+2025-05-08 12:29:06,309 - WARNING - Unable to append air quality data
+2025-05-08 12:40:51,795 - WARNING - Unable to append weather data
+2025-05-08 12:40:51,795 - WARNING - Unable to append air quality data
+2025-05-08 12:41:58,733 - WARNING - Unable to append weather data
+2025-05-08 12:41:58,734 - WARNING - Unable to append air quality data
+2025-05-08 13:12:50,526 - WARNING - Unable to append weather data
+2025-05-08 13:12:50,526 - WARNING - Unable to append air quality data
+2025-05-08 13:13:14,383 - WARNING - Unable to append weather data
+2025-05-08 13:13:14,385 - WARNING - Unable to append air quality data
+2025-05-08 13:14:27,094 - WARNING - Unable to append weather data
+2025-05-08 13:14:27,095 - WARNING - Unable to append air quality data
+2025-05-08 13:14:42,188 - WARNING - Unable to append weather data
+2025-05-08 13:14:42,189 - WARNING - Unable to append air quality data
+2025-05-08 13:14:57,576 - WARNING - Unable to append weather data
+2025-05-08 13:14:57,576 - WARNING - Unable to append air quality data
+2025-05-08 13:15:27,911 - WARNING - Unable to append weather data
+2025-05-08 13:15:27,912 - WARNING - Unable to append air quality data
+2025-05-08 13:15:36,960 - WARNING - Unable to append weather data
+2025-05-08 13:15:36,961 - WARNING - Unable to append air quality data
+2025-05-08 13:17:41,165 - WARNING - Unable to append weather data
+2025-05-08 13:17:41,165 - WARNING - Unable to append air quality data
+2025-05-08 13:18:23,326 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-05-08 13:18:23,819 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/london?unitGroup=us&key=YPRFL9YJC993BVMCKUBCYMGFD&contentType=json HTTP/1.1" 200 None
+2025-05-08 13:18:23,830 - DEBUG - Starting new HTTPS connection (1): api.waqi.info:443
+2025-05-08 13:18:25,098 - DEBUG - https://api.waqi.info:443 "GET /feed/London/?token=ba82ebbfeadd9c7b6cf12f43bc150dd3039ac2e2 HTTP/1.1" 200 None
+2025-05-08 13:18:58,261 - WARNING - Unable to append weather data
+2025-05-08 13:18:58,261 - WARNING - Unable to append air quality data

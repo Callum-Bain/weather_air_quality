@@ -1,24 +1,10 @@
-from src.load_utils import connect_to_weather_db, connect_to_postgres_db
-import pg8000
+from src.load_utils import create_database, connect_to_weather_db
 
 def load():
-    try:
-        conn = connect_to_weather_db()
-    except pg8000.exceptions.DatabaseError as e:
-        if e.args[0]['C'] == '3D000':
-            conn = connect_to_postgres_db()
-            query = 'CREATE DATABASE weather_aqi;'
-            conn.run(query)
-            conn.close()
-            conn = connect_to_weather_db()
-
-            with open("sql/schema.sql", "r") as file:
-                sql_commands = file.read()
-
-            for command in sql_commands.strip().split(';'):
-                if command.strip():
-                    conn.run(command)
-            conn.close()
+    create_database()
+    conn = connect_to_weather_db()
+    # conn.run a query for insert into or insert using pandas
+    # 
 
 
 load()
